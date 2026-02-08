@@ -8,8 +8,8 @@ const CAL_URL = "https://cal.com/juliandicarlo";
 
 export function Hero() {
   return (
-    <section className="relative pt-32 pb-12 md:pt-40 md:pb-16">
-      <div className="mx-auto max-w-3xl px-6 text-left">
+    <section className="relative pt-32 pb-12 md:pt-40 md:pb-16 overflow-x-hidden">
+      <div className="mx-auto max-w-3xl px-4 text-left sm:px-6">
         <motion.h1
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,7 +32,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-10 flex flex-wrap items-center gap-4"
+          className="mt-10 flex flex-wrap items-center gap-3 sm:gap-4"
         >
           <Button size="lg" asChild>
             <Link href="/request-insurance">Get Insurance</Link>

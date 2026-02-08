@@ -91,9 +91,9 @@ export function HeroCoverageGrid() {
       className="pt-6 pb-8 text-left md:pt-8 md:pb-10"
       aria-labelledby="hero-coverage-label"
     >
-      <div className="mx-auto max-w-3xl px-6">
+      <div className="mx-auto max-w-3xl px-4 sm:px-6">
         {/* Single soft container — stacked vertically */}
-        <div className="overflow-hidden rounded-3xl bg-surface-2/80 px-6 py-10 shadow-sm md:px-10 md:py-14">
+        <div className="overflow-hidden rounded-3xl bg-surface-2/80 px-4 py-10 shadow-sm sm:px-6 md:px-10 md:py-14">
           {/* Coverage section */}
           <div>
             <h2

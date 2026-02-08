@@ -24,10 +24,10 @@ export function Nav() {
       initial={{ opacity: 0, y: -8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
-      className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-surface/95 backdrop-blur-md shadow-sm"
+      className="fixed top-0 left-0 right-0 z-50 overflow-x-hidden border-b border-border bg-surface/95 backdrop-blur-md shadow-sm"
     >
-      <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <Link href="/" className="flex items-center gap-2">
+      <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
+        <Link href="/" className="flex shrink-0 items-center gap-2">
           <Image
             src="/stead-logo.png"
             alt="Stead"
@@ -56,23 +56,28 @@ export function Nav() {
           ))}
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex min-w-0 shrink items-center gap-2 sm:gap-4">
           <Link
             href="/signin?redirect=/app"
-            className="text-sm text-muted-foreground underline-offset-4 hover:text-primary hover:underline"
+            className="shrink-0 text-sm text-muted-foreground underline-offset-4 hover:text-primary hover:underline"
           >
             Sign in
           </Link>
-          <Button variant="secondary" asChild>
-            <Link href="/request-review">Request private review</Link>
+          <Button variant="secondary" size="sm" className="shrink-0 text-xs sm:text-sm" asChild>
+            <Link href="/request-review">
+              <span className="sm:hidden">Review</span>
+              <span className="hidden sm:inline">Request private review</span>
+            </Link>
           </Button>
           <a
             href={CAL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-muted-foreground underline-offset-4 hover:text-primary hover:underline"
+            className="shrink-0 whitespace-nowrap text-sm text-muted-foreground underline-offset-4 hover:text-primary hover:underline"
+            aria-label="Book a call"
           >
-            Book a call
+            <span className="sm:hidden">Call</span>
+            <span className="hidden sm:inline">Book a call</span>
           </a>
         </div>
       </nav>

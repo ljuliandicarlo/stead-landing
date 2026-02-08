@@ -38,8 +38,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="antialiased">
-      <body className="font-sans bg-background text-foreground min-h-screen antialiased">
+    <html lang="en" className="antialiased overflow-x-hidden">
+      <body className="font-sans bg-background text-foreground min-h-screen antialiased overflow-x-hidden">
         <DefaultStructuredData />
         {children}
       </body>

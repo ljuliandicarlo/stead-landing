@@ -39,7 +39,7 @@ function CoverageCard({
   label,
 }: {
   href: string;
-  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
+  icon: React.ComponentType<{ className?: string; strokeWidth?: number | string }>;
   label: string;
 }) {
   return (
@@ -65,7 +65,7 @@ function PersonaCard({
   label,
 }: {
   href: string;
-  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
+  icon: React.ComponentType<{ className?: string; strokeWidth?: number | string }>;
   label: string;
 }) {
   return (

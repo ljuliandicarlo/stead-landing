@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 const CAL_URL = "https://cal.com/juliandicarlo";
 
 const navLinks = [
-  { href: "/life-insurance", label: "Life Insurance" },
+  { href: "/life-insurance", label: "Explore Insurance" },
   { href: "/life-vault", label: "Life Vault" },
   { href: "/concierge", label: "Concierge" },
   { href: "/about", label: "About" },
@@ -24,7 +24,7 @@ export function Nav() {
       initial={{ opacity: 0, y: -8 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4 }}
-      className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-md"
+      className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-surface/95 backdrop-blur-md shadow-sm"
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-2">
@@ -33,7 +33,7 @@ export function Nav() {
             alt="Stead"
             width={32}
             height={32}
-            className="h-8 w-8 object-contain"
+            className="h-8 w-8 rounded-lg object-contain"
             priority
           />
           <span className="text-lg font-semibold tracking-tight text-foreground">
@@ -47,7 +47,7 @@ export function Nav() {
               key={link.href}
               href={link.href}
               className={cn(
-                "text-sm text-muted-foreground transition-colors hover:text-foreground",
+                "text-sm text-muted-foreground transition-colors hover:text-primary",
                 pathname === link.href && "text-foreground"
               )}
             >
@@ -59,7 +59,7 @@ export function Nav() {
         <div className="flex items-center gap-4">
           <Link
             href="/signin?redirect=/app"
-            className="text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+            className="text-sm text-muted-foreground underline-offset-4 hover:text-primary hover:underline"
           >
             Sign in
           </Link>
@@ -70,9 +70,9 @@ export function Nav() {
             href={CAL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+            className="text-sm text-muted-foreground underline-offset-4 hover:text-primary hover:underline"
           >
-            Book call
+            Book a call
           </a>
         </div>
       </nav>

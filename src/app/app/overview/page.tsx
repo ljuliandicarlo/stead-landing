@@ -48,7 +48,7 @@ export default async function OverviewPage() {
       </p>
 
       <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        <div className="rounded-xl border border-border bg-muted/30 p-6">
+        <div className="rounded-xl border border-border bg-surface p-6">
           <h2 className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             Readiness score
           </h2>
@@ -62,7 +62,7 @@ export default async function OverviewPage() {
               : "All clear"}
           </p>
         </div>
-        <div className="rounded-xl border border-border bg-muted/30 p-6">
+        <div className="rounded-xl border border-border bg-surface p-6">
           <h2 className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             Documents
           </h2>
@@ -73,7 +73,7 @@ export default async function OverviewPage() {
             <Link href="/app/documents">View all</Link>
           </Button>
         </div>
-        <div className="rounded-xl border border-border bg-muted/30 p-6">
+        <div className="rounded-xl border border-border bg-surface p-6">
           <h2 className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
             Alerts
           </h2>
@@ -95,7 +95,7 @@ export default async function OverviewPage() {
             {expired.map((d) => (
               <li
                 key={d.id}
-                className="flex items-center gap-3 rounded-lg border border-border bg-muted/30 px-4 py-3"
+                className="flex items-center gap-3 rounded-lg border border-border bg-surface px-4 py-3"
               >
                 <AlertCircle className="h-4 w-4 shrink-0 text-red-600" />
                 <div className="min-w-0 flex-1">
@@ -116,7 +116,7 @@ export default async function OverviewPage() {
             {expiringSoon.map((d) => (
               <li
                 key={d.id}
-                className="flex items-center gap-3 rounded-lg border border-border bg-muted/30 px-4 py-3"
+                className="flex items-center gap-3 rounded-lg border border-border bg-surface px-4 py-3"
               >
                 <AlertCircle className="h-4 w-4 shrink-0 text-amber-500" />
                 <div className="min-w-0 flex-1">
@@ -137,7 +137,7 @@ export default async function OverviewPage() {
       )}
 
       {total === 0 && (
-        <div className="mt-10 rounded-xl border border-border bg-muted/20 p-10 text-center">
+        <div className="mt-10 rounded-xl border border-border bg-surface-2 p-10 text-center">
           <FileText className="mx-auto h-12 w-12 text-muted-foreground" />
           <p className="mt-4 font-medium text-foreground">
             No documents yet

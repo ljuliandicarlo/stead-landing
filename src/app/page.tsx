@@ -1,16 +1,18 @@
 import { Nav } from "@/components/landing/nav";
 import { Hero } from "@/components/landing/hero";
-import { SectionLifeInsurance } from "@/components/landing/section-life-insurance";
-import { SectionLifeVault } from "@/components/landing/section-life-vault";
+import { HeroCoverageGrid } from "@/components/landing/hero-coverage-grid";
+import { TrustStrip } from "@/components/landing/trust-strip";
+import { HowItWorks } from "@/components/landing/how-it-works";
+import { SectionIncludedWithCoverage } from "@/components/landing/section-included-with-coverage";
 import { SectionConcierge } from "@/components/landing/section-concierge";
 import { SectionAbout } from "@/components/landing/section-about";
 import { Footer } from "@/components/landing/footer";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: "Stead — Life insurance and life organization, in one place",
+  title: "Stead — Life insurance, done right",
   description:
-    "Stead helps you request the right coverage, organize life-critical documents, and coordinate execution with trusted professionals. Secure document vault and estate planning support.",
+    "Get the right coverage, structured correctly, and keep everything organized for when it actually matters. Coordinated through licensed professionals. Private by default.",
   path: "/",
 });
 
@@ -20,8 +22,10 @@ export default function HomePage() {
       <Nav />
       <main>
         <Hero />
-        <SectionLifeInsurance />
-        <SectionLifeVault />
+        <HeroCoverageGrid />
+        <TrustStrip />
+        <HowItWorks />
+        <SectionIncludedWithCoverage />
         <SectionConcierge />
         <SectionAbout />
         <Footer />

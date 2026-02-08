@@ -33,7 +33,7 @@ export function Footer() {
   const [disclosureOpen, setDisclosureOpen] = useState(false);
 
   return (
-    <footer className="border-t border-border bg-muted/20">
+    <footer className="border-t border-border bg-surface-2">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-2 md:gap-16">
           <div>
@@ -43,17 +43,17 @@ export function Footer() {
                 alt="Stead"
                 width={24}
                 height={24}
-                className="h-6 w-6 object-contain"
+                className="h-6 w-6 rounded-lg object-contain"
               />
               <p className="text-sm font-medium text-foreground">Stead</p>
             </div>
             <p className="mt-2 text-sm text-muted-foreground">
-              Life insurance and life organization, in one place.
+              Life insurance coordination and document organization.
             </p>
             <p className="mt-4 text-sm text-muted-foreground">
               <a
                 href="mailto:hello@stead.org"
-                className="inline-flex items-center gap-1.5 underline hover:text-foreground"
+                className="inline-flex items-center gap-1.5 underline hover:text-primary"
               >
                 <Mail className="h-3.5 w-3.5" />
                 hello@stead.org
@@ -79,23 +79,26 @@ export function Footer() {
                 <XLogoIcon className="h-5 w-5" />
               </a>
             </div>
+            <p className="mt-3 text-[11px] text-muted-foreground/60">
+              Built with love in NYC
+            </p>
           </div>
           <div className="flex flex-col gap-4">
             <Link
               href="/privacy"
-              className="text-sm text-muted-foreground hover:text-foreground"
+              className="text-sm text-muted-foreground hover:text-primary"
             >
               Privacy policy
             </Link>
             <Link
               href="/terms"
-              className="text-sm text-muted-foreground hover:text-foreground"
+              className="text-sm text-muted-foreground hover:text-primary"
             >
               Terms
             </Link>
             <Link
               href="/partners"
-              className="text-sm text-muted-foreground hover:text-foreground"
+              className="text-sm text-muted-foreground hover:text-primary"
             >
               Partner with us
             </Link>
@@ -103,9 +106,9 @@ export function Footer() {
               href={CAL_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-muted-foreground hover:text-foreground"
+              className="text-sm text-muted-foreground hover:text-primary"
             >
-              Book call
+              Book a call
             </a>
           </div>
         </div>
@@ -117,7 +120,7 @@ export function Footer() {
 
           <Collapsible open={disclosureOpen} onOpenChange={setDisclosureOpen}>
             <CollapsibleTrigger
-              className="mt-4 flex w-full items-center justify-start gap-1.5 text-left text-xs text-muted-foreground transition-colors hover:text-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background rounded"
+              className="mt-4 flex w-full items-center justify-start gap-1.5 text-left text-xs text-muted-foreground transition-colors hover:text-primary focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:ring-offset-background rounded"
               aria-expanded={disclosureOpen}
             >
               Legal & regulatory disclosure

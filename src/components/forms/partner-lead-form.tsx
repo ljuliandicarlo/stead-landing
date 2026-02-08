@@ -75,7 +75,7 @@ export function PartnerLeadForm() {
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0 }}
-          className="rounded-xl border border-border bg-muted/30 p-10 text-center"
+          className="rounded-xl border border-border bg-surface-2 p-10 text-center"
         >
           <p className="text-lg font-medium text-foreground">
             Thank you for your interest. We review partner inquiries on a rolling basis and will reach out if there is a fit.
@@ -193,7 +193,7 @@ export function PartnerLeadForm() {
       </div>
 
       {consent && <input type="hidden" name="consent" value="on" />}
-      <div className="rounded-lg border border-border bg-muted/30 p-4">
+      <div className="rounded-lg border border-border bg-surface-2 p-4">
         <div className="flex items-start gap-3">
           <Checkbox
             id="consent"

@@ -2,24 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+  Insurtech light theme: Apple-like clarity with subtle blue undertones.
+  Structure supports future dark mode via .dark class.
+*/
 :root {
-  --background: #ffffff;
-  --foreground: #0a0a0a;
-  --muted: #f5f5f5;
-  --muted-foreground: #737373;
-  --border: #e5e5e5;
-  --ring: #0a0a0a;
+  /* Page and surfaces — subtle blue-gray undertone */
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --surface: #ffffff;
+  --surface-2: #f1f5f9;
+  --muted: #f1f5f9;
+  --muted-foreground: #475569;
+  --border: #e2e8f0;
+  --ring: #2563eb;
+  /* Primary blue — links, focus, secondary accents */
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+  /* Accent (primary CTA): dark, high contrast */
+  --accent: #0f172a;
+  --accent-foreground: #ffffff;
+  /* Shadows — slightly deeper for depth */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.06);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #fafafa;
-    --muted: #525252;
-    --muted-foreground: #737373;
-    --border: #262626;
-    --ring: #fafafa;
-  }
+/* Future dark mode: add .dark to html when implementing toggle */
+.dark {
+  --background: #0a0a0a;
+  --foreground: #fafafa;
+  --surface: #171717;
+  --surface-2: #262626;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
+  --border: #262626;
+  --ring: #fafafa;
+  --accent: #fafafa;
+  --accent-foreground: #0a0a0a;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -31,5 +54,16 @@ body {
 @layer base {
   * {
     @apply border-border;
+  }
+
+  /* Links use primary blue for a modern insurtech feel */
+  a:not([class]) {
+    @apply text-primary underline-offset-4 hover:underline;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }

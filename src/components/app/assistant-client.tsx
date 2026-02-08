@@ -8,7 +8,7 @@ export function AssistantClient({ hasOpenAI }: { hasOpenAI: boolean }) {
 
   if (!hasOpenAI) {
     return (
-      <div className="mt-10 rounded-xl border border-border bg-muted/30 p-12 text-center">
+      <div className="mt-10 rounded-xl border border-border bg-surface p-12 text-center">
         <MessageSquare className="mx-auto h-12 w-12 text-muted-foreground" />
         <p className="mt-4 font-medium text-foreground">
           Assistant coming soon
@@ -22,7 +22,7 @@ export function AssistantClient({ hasOpenAI }: { hasOpenAI: boolean }) {
   }
 
   return (
-    <div className="mt-10 rounded-xl border border-border bg-muted/30 p-8">
+    <div className="mt-10 rounded-xl border border-border bg-surface p-8">
       <p className="text-sm text-muted-foreground">
         Document assistant is available. Ask a question about your documents
         below. (Full implementation: wire to OpenAI with document context.)

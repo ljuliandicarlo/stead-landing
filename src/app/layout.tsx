@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
 import { SITE_URL, DEFAULT_TITLE, DEFAULT_DESCRIPTION } from "@/lib/seo";
 import { DefaultStructuredData } from "@/components/seo/default-structured-data";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#2563eb",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -39,9 +39,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="antialiased">
-      <body
-        className={`${inter.variable} font-sans bg-background text-foreground min-h-screen`}
-      >
+      <body className="font-sans bg-background text-foreground min-h-screen antialiased">
         <DefaultStructuredData />
         {children}
       </body>

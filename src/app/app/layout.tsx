@@ -25,7 +25,7 @@ export default async function AppLayout({
 
   return (
     <div className="flex min-h-screen flex-col md:flex-row">
-      <aside className="w-full border-b border-border bg-muted/20 md:w-56 md:border-b-0 md:border-r">
+      <aside className="w-full border-b border-border bg-surface-2 md:w-56 md:border-b-0 md:border-r">
         <div className="flex h-14 items-center border-b border-border px-4 md:border-b-0">
           <Link href="/app" className="flex items-center gap-2">
             <Image
@@ -33,7 +33,7 @@ export default async function AppLayout({
               alt="Stead"
               width={24}
               height={24}
-              className="h-6 w-6 object-contain"
+              className="h-6 w-6 rounded-lg object-contain"
             />
             <span className="text-lg font-semibold tracking-tight text-foreground">
               Stead

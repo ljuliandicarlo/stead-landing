@@ -8,9 +8,9 @@ import { BreadcrumbListSchema } from "@/components/seo/structured-data";
 import { DISCLAIMER_SHORT, DISCLAIMER_FORM_INSURANCE } from "@/lib/compliance";
 
 export const metadata = buildMetadata({
-  title: "Get Insurance | Request consultation | Stead",
+  title: "Request a consultation | Stead",
   description:
-    "Submit a request for life insurance consultation. Stead connects you with licensed professionals. We do not sell or issue insurance.",
+    "Submit a request for life insurance consultation. Stead connects you with licensed professionals when there is a clear fit. We do not sell or issue insurance.",
   path: "/request-insurance",
 });
 
@@ -22,13 +22,13 @@ export default function RequestInsurancePage() {
         items={[
           { name: "Home", path: "/" },
           { name: "Life Insurance", path: "/life-insurance" },
-          { name: "Get Insurance", path: "/request-insurance" },
+          { name: "Request consultation", path: "/request-insurance" },
         ]}
       />
       <main className="min-h-screen pt-24 pb-24">
       <div className="mx-auto max-w-xl px-6">
         <h1 className="text-2xl font-semibold tracking-tight text-foreground md:text-3xl">
-          Get Insurance
+          Request a consultation
         </h1>
         <p className="mt-3 text-muted-foreground">
           We review requests and connect you with licensed professionals when

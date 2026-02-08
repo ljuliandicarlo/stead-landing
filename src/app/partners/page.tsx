@@ -103,7 +103,7 @@ export default function PartnersPage() {
             <PartnerLeadForm />
           </section>
 
-          <section className="mt-16 rounded-lg border border-border bg-muted/20 p-6" aria-labelledby="disclaimer-heading">
+          <section className="mt-16 rounded-lg border border-border bg-surface-2 p-6" aria-labelledby="disclaimer-heading">
             <h2 id="disclaimer-heading" className="text-sm font-medium text-foreground">
               Disclaimer
             </h2>

@@ -1,6 +1,7 @@
 "use server";
 
 import { createClient } from "@/lib/supabase/server";
+import { sendLeadNotification } from "@/lib/notify-lead";
 import type { InsuranceLeadInsert } from "@/types/database";
 
 export async function submitInsuranceLead(formData: FormData) {
@@ -44,5 +45,6 @@ export async function submitInsuranceLead(formData: FormData) {
     return { error: "Failed to submit. Please try again." };
   }
 
+  await sendLeadNotification("insurance", payload);
   return { success: true };
 }

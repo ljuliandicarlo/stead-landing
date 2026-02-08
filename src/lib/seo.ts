@@ -4,9 +4,9 @@ export const SITE_NAME = "Stead";
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://stead.org";
 export const DEFAULT_TITLE =
-  "Stead — Life insurance and life organization, in one place";
+  "Stead — Life insurance, done right";
 export const DEFAULT_DESCRIPTION =
-  "Stead helps you request the right coverage, organize life-critical documents, and coordinate execution with trusted professionals. Secure document vault and estate planning support.";
+  "Get the right coverage, structured correctly, and keep everything organized for when it actually matters. Coordinated through licensed professionals. Private by default.";
 
 export const TWITTER_HANDLE = "@steadorg";
 export const LINKEDIN_URL = "https://linkedin.com/company/steadorg";
@@ -72,6 +72,11 @@ export function buildMetadata({
 export const PUBLIC_ROUTES = [
   { path: "/", priority: 1, changeFrequency: "weekly" as const },
   { path: "/life-insurance", priority: 0.9, changeFrequency: "monthly" as const },
+  { path: "/life-insurance/term", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/life-insurance/permanent", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/life-insurance/income-protection", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/life-insurance/key-person", priority: 0.8, changeFrequency: "monthly" as const },
+  { path: "/life-insurance/buy-sell", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/life-vault", priority: 0.9, changeFrequency: "monthly" as const },
   { path: "/concierge", priority: 0.8, changeFrequency: "monthly" as const },
   { path: "/about", priority: 0.8, changeFrequency: "monthly" as const },

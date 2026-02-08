@@ -6,7 +6,7 @@ export function SectionAbout() {
   return (
     <section
       id="about"
-      className="scroll-mt-24 border-t border-border py-24 md:py-32"
+      className="scroll-mt-24 border-t border-border bg-surface-2 py-24 md:py-32"
     >
       <div className="mx-auto max-w-3xl px-6 text-left">
         <motion.h2
@@ -25,9 +25,10 @@ export function SectionAbout() {
           transition={{ duration: 0.4, delay: 0.05 }}
           className="mt-6 text-lg text-muted-foreground"
         >
-          Stead is a tech-enabled life insurance coordination company. We help
-          you request the right coverage, organize life-critical documents, and
-          connect with trusted professionals. We do not sell or issue insurance.
+          Stead coordinates life insurance and organizes life-critical
+          documents. We help you request the right coverage, work with licensed
+          professionals, and keep documents in one place. We do not sell or
+          issue insurance.
         </motion.p>
       </div>
     </section>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const links = [
-  { href: "/life-insurance", label: "Life Insurance" },
+  { href: "/life-insurance", label: "Explore Insurance" },
   { href: "/life-vault", label: "Life Vault" },
   { href: "/concierge", label: "Concierge" },
   { href: "/partners", label: "Partners" },

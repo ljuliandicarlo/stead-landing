@@ -38,7 +38,7 @@ export function SignInForm({
 
   if (sent) {
     return (
-      <div className="rounded-xl border border-border bg-muted/30 p-6 text-center">
+      <div className="rounded-xl border border-border bg-surface-2 p-6 text-center">
         <p className="text-sm font-medium text-foreground">
           Check your email for the sign-in link.
         </p>

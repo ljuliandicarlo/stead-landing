@@ -46,7 +46,7 @@ export default async function AlertsPage() {
       </p>
 
       {!hasAlerts && (
-        <div className="mt-10 rounded-xl border border-border bg-muted/30 p-12 text-center">
+        <div className="mt-10 rounded-xl border border-border bg-surface p-12 text-center">
           <AlertCircle className="mx-auto h-12 w-12 text-muted-foreground" />
           <p className="mt-4 font-medium text-foreground">No alerts</p>
           <p className="mt-2 text-sm text-muted-foreground">
@@ -82,7 +82,7 @@ export default async function AlertsPage() {
           {expiringSoon.map((d) => (
             <li
               key={d.id}
-              className="flex items-center justify-between rounded-lg border border-border bg-muted/30 px-4 py-4"
+              className="flex items-center justify-between rounded-lg border border-border bg-surface px-4 py-4"
             >
               <div className="flex items-center gap-3">
                 <AlertCircle className="h-5 w-5 shrink-0 text-amber-500" />

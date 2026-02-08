@@ -22,7 +22,7 @@ export default async function SettingsPage() {
         Account and Life Vault preferences.
       </p>
 
-      <div className="mt-10 rounded-xl border border-border bg-muted/30 p-6">
+      <div className="mt-10 rounded-xl border border-border bg-surface p-6">
         <h2 className="text-sm font-medium text-foreground">Account</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           {user.email}

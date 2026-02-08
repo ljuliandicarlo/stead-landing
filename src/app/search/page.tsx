@@ -67,7 +67,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
                 href="/concierge"
                 className="block text-foreground underline-offset-4 hover:underline"
               >
-                Concierge / private review
+                Private review
               </Link>
               <Link
                 href="/contact"

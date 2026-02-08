@@ -7,9 +7,9 @@ import { RelatedLinks } from "@/components/seo/related-links";
 import { Button } from "@/components/ui/button";
 
 export const metadata = buildMetadata({
-  title: "Professionals & Partners | Stead",
+  title: "Professionals & partners | Stead",
   description:
-    "Partner with Stead. For licensed professionals: life insurance coordination, document vault referrals, estate planning support. Join our network.",
+    "For licensed professionals and firms: life insurance coordination, Life Vault referrals. Partner with Stead.",
   path: "/professionals",
 });
 

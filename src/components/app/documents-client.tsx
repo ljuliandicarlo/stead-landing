@@ -78,7 +78,7 @@ export function DocumentsClient({
 
   if (documents.length === 0) {
     return (
-      <div className="mt-12 rounded-xl border border-border bg-muted/20 p-12 text-center">
+      <div className="mt-12 rounded-xl border border-border bg-surface-2 p-12 text-center">
         <FileText className="mx-auto h-12 w-12 text-muted-foreground" />
         <p className="mt-4 font-medium text-foreground">No documents yet</p>
         <p className="mt-2 text-sm text-muted-foreground">
@@ -95,7 +95,7 @@ export function DocumentsClient({
           <li key={d.id}>
             <Link
               href={`/app/documents?doc=${d.id}`}
-              className="flex items-center justify-between rounded-lg border border-border bg-muted/30 px-4 py-3 transition-colors hover:bg-muted/50"
+              className="flex items-center justify-between rounded-lg border border-border bg-surface px-4 py-3 transition-colors hover:bg-muted/50"
             >
               <div className="flex min-w-0 items-center gap-3">
                 <FileText className="h-4 w-4 shrink-0 text-muted-foreground" />

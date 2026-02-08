@@ -7,9 +7,9 @@ import { RelatedLinks } from "@/components/seo/related-links";
 import { Mail } from "lucide-react";
 
 export const metadata = buildMetadata({
-  title: "Contact Stead",
+  title: "Contact | Stead",
   description:
-    "Get in touch with Stead. Email hello@stead.org for general inquiries, life insurance coordination, Life Vault, or private review.",
+    "Email hello@stead.org for general inquiries, life insurance coordination, Life Vault, or private review.",
   path: "/contact",
 });
 
@@ -54,7 +54,7 @@ export default function ContactPage() {
             <ul className="mt-3 space-y-2 text-muted-foreground">
               <li>
                 <Link href="/request-insurance" className="underline hover:text-foreground">
-                  Get Insurance (request consultation)
+                  Get Insurance
                 </Link>
               </li>
               <li>

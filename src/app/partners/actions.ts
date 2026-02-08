@@ -1,6 +1,7 @@
 "use server";
 
 import { createClient } from "@/lib/supabase/server";
+import { sendLeadNotification } from "@/lib/notify-lead";
 import type { PartnerLeadInsert } from "@/types/database";
 
 export async function submitPartnerLead(formData: FormData) {
@@ -38,5 +39,6 @@ export async function submitPartnerLead(formData: FormData) {
     return { error: "Failed to submit. Please try again." };
   }
 
+  await sendLeadNotification("partner", payload);
   return { success: true };
 }

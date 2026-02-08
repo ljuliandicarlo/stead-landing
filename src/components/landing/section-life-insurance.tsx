@@ -26,7 +26,7 @@ export function SectionLifeInsurance() {
   return (
     <section
       id="life-insurance"
-      className="scroll-mt-24 border-t border-border bg-muted/20 py-24 md:py-32"
+      className="scroll-mt-24 border-t border-border bg-surface-2 py-24 md:py-32"
     >
       <div className="mx-auto max-w-3xl px-6 text-left">
         <motion.h2
@@ -45,8 +45,8 @@ export function SectionLifeInsurance() {
           transition={{ duration: 0.4, delay: 0.05 }}
           className="mt-6 text-lg text-muted-foreground"
         >
-          We connect you with licensed professionals who can help you request
-          the right coverage—not sell you a policy. Outcomes we care about:
+          We connect you with licensed professionals who help you get the right
+          coverage and structure. We do not sell or issue insurance.
         </motion.p>
         <ul className="mt-8 space-y-4">
           {outcomes.map((item, i) => (
@@ -87,9 +87,9 @@ export function SectionLifeInsurance() {
             href={CAL_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+            className="text-sm text-muted-foreground underline-offset-4 hover:text-primary hover:underline"
           >
-            Book call
+            Book a call
           </a>
         </motion.div>
       </div>

@@ -9,7 +9,7 @@ import { DISCLAIMER_SHORT, DISCLAIMER_FORM_CONCIERGE } from "@/lib/compliance";
 export const metadata = buildMetadata({
   title: "Request a private review | Stead",
   description:
-    "Continuity Blueprint for complex lives. Limited availability. We review requests and respond when there is a clear fit.",
+    "Submit a request for a private review of your coverage and documents. We respond when there is a clear fit.",
   path: "/request-review",
 });
 
@@ -30,11 +30,11 @@ export default function RequestReviewPage() {
           Request a private review
         </h1>
         <p className="mt-3 text-muted-foreground">
-          Continuity Blueprint for complex lives. Limited availability. We
-          review requests and respond when there is a clear fit.
+          We review requests and respond when there is a clear fit. No
+          guarantee of service.
         </p>
 
-        <div className="mt-8 rounded-lg border border-border bg-muted/30 p-4">
+        <div className="mt-8 rounded-lg border border-border bg-surface-2 p-4">
           <p className="text-sm text-muted-foreground">
             <strong>Disclaimer.</strong> {DISCLAIMER_SHORT} {DISCLAIMER_FORM_CONCIERGE}
           </p>

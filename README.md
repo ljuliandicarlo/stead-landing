@@ -1,6 +1,6 @@
 # Stead
 
-Life insurance and life organization, in one place. A tech-enabled life insurance coordination business with supporting software.
+Life insurance and continuity, in one place. A tech-enabled life insurance coordination business with supporting software.
 
 ## What this is
 

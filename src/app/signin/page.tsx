@@ -25,7 +25,7 @@ export default function SignInPage({
               alt="Stead"
               width={40}
               height={40}
-              className="h-10 w-10 object-contain"
+              className="h-10 w-10 rounded-lg object-contain"
             />
             <span className="text-xl font-semibold tracking-tight text-foreground">
               Stead

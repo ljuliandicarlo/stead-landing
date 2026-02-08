@@ -13,7 +13,7 @@ const features = [
   { icon: Check, text: "Missing document detection" },
   { icon: Share2, text: "Controlled sharing (role-based, time-limited)" },
   { icon: FileArchive, text: "Emergency export pack" },
-  { icon: MessageSquare, text: "AI assistant that answers from your documents only" },
+  { icon: MessageSquare, text: "Answers from your stored documents only" },
 ];
 
 export function SectionLifeVault() {

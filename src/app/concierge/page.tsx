@@ -9,9 +9,9 @@ import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 
 export const metadata = buildMetadata({
-  title: "Private Review & Concierge | Stead",
+  title: "Private review | Stead",
   description:
-    "Continuity Blueprint for complex lives. Limited availability. Coverage and document audit, execution readiness plan, introductions to vetted professionals. Request a private review.",
+    "A private review of your coverage and documents. Coverage and document audit, execution readiness plan, introductions to vetted professionals. By request.",
   path: "/concierge",
 });
 
@@ -26,8 +26,8 @@ export default function ConciergePage() {
     <>
       <Nav />
       <ServiceSchema
-        name="Private review and coordination"
-        description="Stead offers a private review and coordination service (Continuity Blueprint) for complex lives. Limited availability. Includes coverage and document audit, execution readiness plan, and introductions to vetted professionals. We do not sell or issue insurance."
+        name="Private review"
+        description="Stead offers a private review of coverage and documents. Includes coverage and document audit, execution readiness plan, and introductions to vetted professionals. We do not sell or issue insurance."
         url="/concierge"
       />
       <BreadcrumbListSchema
@@ -40,15 +40,16 @@ export default function ConciergePage() {
       <main className="min-h-screen pt-24 pb-24">
         <div className="mx-auto max-w-3xl px-6">
           <h1 className="text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
-            Private review and coordination
+            Private review
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            Continuity Blueprint for complex lives. Limited availability.
+            A private review of your coverage and documents. Discretion and fit
+            matter.
           </p>
 
           <section className="mt-10" aria-labelledby="outcomes-heading">
             <h2 id="outcomes-heading" className="text-xl font-medium text-foreground">
-              What we offer
+              What’s included
             </h2>
             <ul className="mt-4 space-y-3">
               {outcomes.map((item) => (

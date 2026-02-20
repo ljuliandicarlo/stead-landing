@@ -9,6 +9,7 @@ export interface OrganizationSchemaProps {
   name?: string;
   url?: string;
   logo?: string;
+  description?: string;
   sameAs?: string[];
 }
 
@@ -16,6 +17,7 @@ export function OrganizationSchema({
   name = SITE_NAME,
   url = SITE_URL,
   logo = `${SITE_URL}/stead-logo.png`,
+  description = "Stead provides life insurance coordination and secure document organization. We connect you with licensed professionals for the right coverage and structure; we do not sell or issue insurance.",
   sameAs = [LINKEDIN_URL, X_URL],
 }: OrganizationSchemaProps = {}) {
   const schema = {
@@ -24,6 +26,7 @@ export function OrganizationSchema({
     name,
     url,
     logo,
+    description,
     sameAs,
   };
   return (

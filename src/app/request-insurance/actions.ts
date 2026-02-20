@@ -37,14 +37,33 @@ export async function submitInsuranceLead(formData: FormData) {
     consent: true,
   };
 
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+  if (!supabaseUrl || !supabaseAnonKey) {
+    console.error(
+      "[request-insurance] Missing Supabase env: NEXT_PUBLIC_SUPABASE_URL or NEXT_PUBLIC_SUPABASE_ANON_KEY"
+    );
+    return { error: "Failed to submit. Please try again." };
+  }
+
   const supabase = await createClient();
   const { error } = await supabase.from("insurance_leads").insert(payload);
 
   if (error) {
-    console.error("Insurance lead insert error:", error);
+    // Log full error server-side (visible in Vercel/host logs) for debugging; never expose to client
+    console.error("[request-insurance] Supabase insert error:", {
+      code: error.code,
+      message: error.message,
+      details: error.details,
+    });
     return { error: "Failed to submit. Please try again." };
   }
 
-  await sendLeadNotification("insurance", payload);
+  // Email is best-effort; don't fail the request if notification fails
+  try {
+    await sendLeadNotification("insurance", payload);
+  } catch (e) {
+    console.error("[request-insurance] Lead notification error:", e);
+  }
   return { success: true };
 }

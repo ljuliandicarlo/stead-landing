@@ -1,5 +1,32 @@
 # Stead SEO Checklist & Implementation Guide
 
+## Owning “Stead life insurance” (branded + category)
+
+To rank for **“stead life insurance”**, **“stead insurance”**, and related branded queries:
+
+### On-site (implemented)
+- **Homepage**: Title “Stead — Life insurance, done right” and default description tie brand + category.
+- **Life insurance page**: Title “Stead life insurance | Coordination & review” and description include “Stead life insurance” once, with compliant coordination language.
+- **Organization schema**: `description` added so Google can show “Stead – life insurance coordination…” in knowledge panel / snippets.
+- **Canonical + sitemap**: One canonical URL per page; `/life-insurance` and subpages in sitemap.
+- **H1**: “Life insurance” on `/life-insurance`; brand is in title and schema (avoid H1 keyword stuffing).
+
+### Technical
+- Set **`NEXT_PUBLIC_SITE_URL`** in production to your live domain (e.g. `https://stead.org`). Wrong value breaks canonicals and sitemap.
+- In **Google Search Console**: Add property, submit `https://<your-domain>/sitemap.xml`, use URL Inspection on `/` and `/life-insurance` until they show “URL is on Google”.
+
+### Off-site (your actions)
+- **Google Business Profile**: If you have a business listing, use name “Stead” and description that includes “life insurance coordination” (no sales language; keep compliant).
+- **Consistent NAP**: Same business name, address, phone everywhere (site, GBP, directories).
+- **Brand mentions**: Get “Stead” and “life insurance” (or “life insurance coordination”) used together in reputable places: LinkedIn, press, partner sites, directories. Quality backlinks to stead.org help.
+- **Social**: Keep LinkedIn/X profiles (sameAs in schema) updated; link to stead.org and key pages.
+
+### What to avoid
+- Don’t stuff “Stead life insurance” in every heading or paragraph; one clear signal in title + description + schema is enough.
+- Don’t claim to sell/issue insurance; keep coordination/disclaimer language everywhere.
+
+---
+
 ## What Was Implemented
 
 ### 1. Technical SEO

@@ -11,9 +11,9 @@ import { Check, FileText, Shield, Heart, UserCog, Handshake, Layers, Users, Brie
 const CAL_URL = "https://cal.com/juliandicarlo";
 
 export const metadata = buildMetadata({
-  title: "Life insurance coordination | Stead",
+  title: "Stead life insurance | Coordination & review",
   description:
-    "We connect you with licensed professionals who help you get the right coverage and structure. We do not sell or issue insurance.",
+    "Stead life insurance coordination: get the right coverage and structure with licensed professionals. We connect you with advisors; we do not sell or issue insurance.",
   path: "/life-insurance",
 });
 

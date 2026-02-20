@@ -9,7 +9,7 @@
 :root {
   /* Page and surfaces — subtle blue-gray undertone */
   --background: #f8fafc;
-  --foreground: #0f172a;
+  --foreground: #1c37b4;
   --surface: #ffffff;
   --surface-2: #f1f5f9;
   --muted: #f1f5f9;
@@ -19,13 +19,13 @@
   /* Primary blue — links, focus, secondary accents */
   --primary: #2563eb;
   --primary-foreground: #ffffff;
-  /* Accent (primary CTA): dark, high contrast */
-  --accent: #0f172a;
+  /* Accent (primary CTA): logo blue */
+  --accent: #1c37b4;
   --accent-foreground: #ffffff;
-  /* Shadows — slightly deeper for depth */
-  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
-  --shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
-  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.06);
+  /* Shadows — tinted with accent blue */
+  --shadow-sm: 0 1px 2px rgba(28, 55, 180, 0.06);
+  --shadow: 0 1px 3px rgba(28, 55, 180, 0.08);
+  --shadow-md: 0 4px 6px -1px rgba(28, 55, 180, 0.08), 0 2px 4px -2px rgba(28, 55, 180, 0.06);
 }
 
 /* Future dark mode: add .dark to html when implementing toggle */
